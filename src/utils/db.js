@@ -5,7 +5,8 @@ import 'dotenv/config';
 console.log('USING DB:', process.env.DATABASE_URL);
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: "postgresql://postgres.qjflbyjvnchiorlzewqp:Adakah100%3F%2A@aws-1-ap-southeast-2.pooler.supabase.com:6543/postgres",
+  //connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false, // wajib untuk Supabase
   },
